@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        /*
+        1 - Escreva um algoritmo para ler 2 valores informados pelo usuário e se o segundo valor informado for ZERO, deve ser lido um novo valor, ou seja, para o segundo valor não pode ser aceito o valor zero nem negativo e imprimir o resultado da divisão do primeiro valor lido pelo segundo valor lido.
+        */
+
+        // var aceito = false;
+        // var outro = 0;
+
+        valor01 = parseInt(prompt("Me informe um valor: "));
+        valor02 = parseInt(prompt("Me informe um segundo valor: "));
+
+        while (true) {
+            if (valor02 <= 0) {
+                valor02 = parseInt(prompt("Por favor informe um valor maior que zero: "));
+                if (valor02 > 0) {
+                    break;
+                }
+            } else {
+                break;
+            }
+        }
+        var divisao = valor01 / valor02;
+        alert("O resultado da divão é igual a: " + divisao);
+
+
+    </script>
+</body>
+
+</html>
