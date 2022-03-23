@@ -14,7 +14,24 @@
         6 - Escreva um programa para ler 2 notas de um aluno, calcular e imprimir a média final. Considere que a nota de aprovação é 9,5. Logo após escrever a mensagem "Calcular a média de outro aluno Sim/Não?" e solicitar um resposta. Se a resposta for "S", o programa deve ser executado novamente, caso contrário deve ser encerrado exibindo a quantidade de alunos aprovados.
         */
 
-        
+        var quantidade = 0;
+
+        while (true) {
+            var nota01 = parseInt(prompt("Me diga a primeria nota: "));
+            var nota02 = parseInt(prompt("Me diga a segunda nota: "));
+
+            // Nota de aprovação 9.5
+            var media = (nota01 + nota02) / 2;
+            if (media => 9.5) {
+                alert("PARABENS, você passou!");
+                quantidade = quantidade + 1;
+                var input = prompt("Calcular a média de outro aluno Sim/Não (S/N)? ");
+                if (input == 'n' || input == 'N') {
+                    alert("A quantidade de alunos aprovados é: " + quantidade);
+                    break;
+                }
+            }
+        }
     </script>
 </body>
 

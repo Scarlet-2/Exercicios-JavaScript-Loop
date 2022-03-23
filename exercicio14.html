@@ -13,6 +13,23 @@
         /*
         14 - Escreva um programa em que o usuário informe 10 valores e escreva quantos desses valores lidos estão entre os números 24 e 42 (incluindo os valores 24 e 42) e quantos deles estão fora deste intervalo.
         */
+
+        var acumulador_dentro = 0;
+        var acumulador_fora = 0;
+
+        for (var i = 0; i < 10; i++) {
+            var input = parseInt(prompt("Me diga um numero: "));
+            if (input <= 42 && input >= 24) {
+                acumulador_dentro = acumulador_dentro + 1;
+            }
+            else {
+                acumulador_fora = acumulador_fora + 1;
+            }
+        }
+
+        alert("A quantidade de numeros dentro do limite é: " + acumulador_dentro);
+        alert("A quantidade de numeros fora do limite é: " + acumulador_fora);
+
     </script>
 </body>
 
